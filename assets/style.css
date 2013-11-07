@@ -125,7 +125,8 @@ small {
 }
 
 .work-item {
-    margin-bottom: 150px;
+    margin-bottom: 130px;
+    padding-top: 30px;
 }
 
 .work-item h3 {
