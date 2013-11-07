@@ -142,10 +142,16 @@ small {
 
 .work-item h4 a {
     color: #999;
+    text-decoration: none;
+    border-bottom: none;
 }
 
 .work-item h4 a:hover {
     color: #464646;
+}
+
+.work-item-description a {
+    border-bottom: 1px solid #e9e9e9;
 }
 
 .credits {
