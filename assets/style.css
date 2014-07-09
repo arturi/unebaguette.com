@@ -48,7 +48,7 @@ small {
 /* main */
 .masthead {
     height: 700px;
-    background: url('bg/hatshop.jpg');
+    background: url('../bg/hatshop.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
