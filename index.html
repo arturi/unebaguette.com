@@ -1,276 +1,173 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="title" content="Baguette">
-	<meta name="description" content="Project bureau">
-	<meta property="og:title" content="Baguette">
-	<meta property="og:description" content="Project bureau">
-	<meta property="og:image" content="http://unebaguette.com/bg/hatshop.jpg">
-	<meta property="og:type" content="website">
-	<meta property="og:site_name" content="Baguette">
-	<meta property="og:url" content="http://unebaguette.com">
-	<title>Baguette</title>
-	<link href="http://fonts.googleapis.com/css?family=Roboto:100,300|PT+Sans:400,700,400italic&subset=latin,cyrillic" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="assets/style.css">
-	<!--[if lt IE 9]><script src="assets/html5.js"></script><![endif]-->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<link href="assets/fotorama.css" rel="stylesheet">
-	<script src="assets/fotorama.js"></script>
-</head>
-<body>
-	<header class="masthead">
-		<div class="masthead-text">
-			<h1>Baguette</h1>
-			<!-- <h2>One person project bureau<br> by Artur Paikin</h2> -->
-			<h2>Project bureau<br> by Artur Paikin</h2>
-			<p><a href="https://www.facebook.com/unebaguette">Facebook</a> and <a href="mailto:artur@arturpaikin.com">e-mail</a>.</p>
-		</div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Baguette</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon-inverted.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/images/favicon-inverted.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@arturi">
+    <meta name="twitter:creator" content="@arturi">
+    <meta property="og:url" content="http://unebaguette.com">
+    <meta property="og:title" content="Baguette">
+    <meta name="twitter:title" content="Baguette">
+    <meta name="description" content="Project bureau by Artur Paikin">
+    <meta name="twitter:description" content="Project bureau by Artur Paikin">
+    <meta property="og:image" content="assets/images/share.jpg">
+    <meta name="twitter:image" content="assets/images/share.jpg">
+    <meta property="og:type" content="website">
+    <link href="main.css" rel="stylesheet">
+  </head>
+  <body>
+    <article class="page">
+      <header class="mainHeader">
+        <h1 class="mainHeader-title"><a href="/">Baguette</a></h1>
+        <h2 class="mainHeader-subtitle">Project bureau by Artur Paikin</h2>
+      </header>
+      <section class="sectionAbout">
+        <!-- <h2 class="section-header">About</h2> -->
+        <p>We make websites and applications. While focusing on frontend development, we also do design, backend and bake muffins. <a href="mailto:artur@arturpaikin.com">Email us</a>, <a href="http://fb.com/unebaguette">follow</a> our work and check out selected projects:</p>
+      </section>
+      <section class="sectionProjects">
+        <ul class="projectList">
+          <li class="projectItem">
+            <img class="projectItem-thumb" src="assets/images/lettera.jpg">
+            <h3 class="projectItem-title"><a href="http://lettera.co">Lettera</a></h3>
+            <h4 class="projectItem-ref"><a href="http://lettera.co">lettera.co</a></h4>
+            <p class="projectItem-desc">Lettera tells you about one book worth your attention every week, and then let’s you purchase it right there in two clicks. For Kindle, iOS, Android or microwaves, DRM free and all. We’ve build all the templates and styles for Rails app that powers Lettera to make it look and work great.</p>
+            <ul class="projectItem-credits">
+              <li>Frontend development: Artur Paikin</li>
+              <li>Project lead: Egor Eremeev</li>
+              <li>Backend & Design: Lettera team</li>
+            </ul>
+          </li>
 
-		<a href="#projects" class="projects-link">
-			Projects<br>
-			<svg width="14px" height="8px" viewBox="0 0 28 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-				<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-					<path d="M1.11403509,1.11403509 L13.8206352,13.8206352" id="Line" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
-					<path d="M14.1140351,1.11403509 L26.8206352,13.8206352" id="Line" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" sketch:type="MSShapeGroup" transform="translate(20.500000, 7.500000) scale(-1, 1) translate(-20.500000, -7.500000) "></path>
-				</g>
-			</svg>
-		</a>
-	</header>
+          <li class="projectItem">
+            <img class="projectItem-thumb"
+                 srcset="assets/images/kotihome.jpg 1600w,
+                         assets/images/kotihome-800w.jpg 800w"
+                   sizes="(min-width: 800px) 800px, 100vw"
+                   alt="Koti Home coral control panel with widgets: lamp, temperature, light, motion and microphone">
+            <h3 class="projectItem-title"><a href="https://github.com/arturi/kotihome">Koti Home Automation System</a></h3>
+            <h4 class="projectItem-ref"><a href="https://github.com/arturi/kotihome">github.com/arturi/kotihome</a></h4>
+            <p class="projectItem-desc">Home automation system based on Arduino with sensors, Raspberri Pi, Node.js, Express, MQTT and Socket.io. Features an extendable React control panel and a friendly robot that you can talk to over microphone or chat via Telegram Bot API.</p>
+            <ul class="projectItem-credits">
+              <li>Design & Development: Artur Paikin</li>
+            </ul>
+          </li>
 
-	<section id="projects" class="works row-1">
-		<article id="elena-zaharova" class="work-item">
+          <li class="projectItem">
+            <img class="projectItem-thumb"
+                 srcset="assets/images/biketowork.jpg 1600w,
+                         assets/images/biketowork-800w.jpg 800w"
+                   sizes="(min-width: 800px) 800px, 100vw"
+                   alt="Bike to Work website, man in suit on a black bycicle">
+            <h3 class="projectItem-title"><a href="http://bike2work.ru">Bike to Work</a></h3>
+            <h4 class="projectItem-ref"><a href="http://bike2work.ru">bike2work.ru</a></h4>
+            <p class="projectItem-desc">Website for Bike to Work days in Russia. Started in Moscow, now spread throughout the country, with roughly over 10,000 participants. The admin interface allows to add and customize page blocks like Instagram feeds or columns and buttons, and even add cities with their own subdomain. It is also the first time something we’ve worked on has been featured on billboards in subway and throughout on the city, feeling good.</p>
+            <ul class="projectItem-credits">
+              <li>Design & Development: Artur Paikin</li>
+              <li>Art director: Vladimir Kumov</li>
+            </ul>
+          </li>
 
-			<div class="slider">
-				<img src="projects/ez-1.jpg">
-				<img src="projects/ez-2.jpg">
-				<img src="projects/ez-3.jpg">
-				<img src="projects/ez-4.jpg">
-				<img src="projects/ez-5.jpg">
-				<img src="projects/ez-6.jpg">
-				<img src="projects/ez-7.jpg">
-				<img src="projects/ez-8.jpg">
-				<img src="projects/ez-9.jpg">
-			</div>
+          <li class="projectItem">
+            <img class="projectItem-thumb"
+                 srcset="assets/images/serebronabora.jpg 1600w,
+                         assets/images/serebronabora-800w.jpg 800w"
+                   sizes="(min-width: 800px) 800px, 100vw"
+                   alt="Serebro Nabora attendees looking at posters and leaflets with typefaces">
+            <h3 class="projectItem-title"><a href="http://serebronabora.com">Serebro Nabora</a></h3>
+            <h4 class="projectItem-ref"><a href="http://serebronabora.com">serebronabora.com</a></h4>
+            <p class="projectItem-desc">Annual international type conference held in Moscow. Responsive website with support for two languages and a flexible admin interface that helps easily alter conference programm, rearrange content blocks and update information.</p>
+            <ul class="projectItem-credits">
+              <li>Development: Artur Paikin</li>
+              <li>Design: Vyacheslav Kyrylenko</li>
+              <li>Art director: Gayaneh Bagdasaryan</li>
+            </ul>
+          </li>
 
-			<div class="work-item-description">
-				<h3>Elena Zaharova’s Portfolio & Blog</h3>
-				<h4><a href="http://elenazaharova.com">elenazaharova.com</a></h4>
-				<p>Elena decorates shop windows and spaces: her goal is for the shops to welcome people in, place each handbag on its very spot and make sure visitors have a great time. We’ve made a site-portfolio and a blog where Elena writes about her travels, book recommendations, shoe reviews and work process.</p>
-				<div class="credits">Design and development: Artur Paikin; Art-director: Elena Zaharova; Logo: Eugene Volkov</div>
-			</div>
+          <li class="projectItem">
+            <!-- <img class="projectItem-thumb" src="assets/images/elenazaharova.jpg"> -->
+            <img class="projectItem-thumb"
+                 srcset="assets/images/elenazaharova.jpg 1600w,
+                         assets/images/elenazaharova-800w.jpg 800w"
+                   sizes="(min-width: 800px) 800px, 100vw"
+                   alt="Elena Zaharova’s table with sunglasses, toy bicycle, tea cup, photo negatives and sketches">
+            <h3 class="projectItem-title"><a href="http://elenazaharova.com">Elena Zaharova</a></h3>
+            <h4 class="projectItem-ref"><a href="http://elenazaharova.com">elenazaharova.com</a></h4>
+            <p class="projectItem-desc">Elena decorates shop windows and spaces: her goal is for the shops to welcome people in, place each handbag on its very spot and make sure visitors have a great time. We’ve made a site-portfolio and a blog where Elena writes about her travels, book recommendations, shoe reviews and work process.</p>
+            <ul class="projectItem-credits">
+              <li>Design & Development: Artur Paikin</li>
+              <li>Art director: Elena Zaharova</li>
+              <li>Lettering: Eugene Volkov</li>
+              <li>Photographer: Alexander Utkin</li>
+            </ul>
+            <!-- <a class="projectItem-more" href="/">Case study →</a> -->
+          </li>
 
-		</article>
+          <li class="projectItem">
+            <img class="projectItem-thumb"
+                 srcset="assets/images/labelmaker.jpg 1600w,
+                         assets/images/labelmaker-800w.jpg 800w"
+                   sizes="(min-width: 800px) 800px, 100vw"
+                   alt="Picture of New York with all kinds of transportation: bicycles, yellow taxi, runners and pedestrians. Labelmakers dots and bubble with text (“Helicopter — belive me, it’s out there”) are placed on the picture">
+            <h3 class="projectItem-title"><a href="http://arturi.github.io/labelmaker/">Label Maker</a></h3>
+            <h4 class="projectItem-ref"><a href="http://arturi.github.io/labelmaker/">arturi.github.io/labelmaker</a></h4>
+            <p class="projectItem-desc">A plugin that lets you put markers on pictures that expand into comment bubbles when clicked or hovered. Responsive. Stores data as an HTML list (ul or ol) to make it accessible and indexable.</p>
+            <ul class="projectItem-credits">
+              <li>Design & Development: Artur Paikin</li>
+            </ul>
+          </li>
 
-		<article id="local-food" class="work-item">
+          <li class="projectItem">
+            <!-- <img class="projectItem-thumb" src="assets/images/madebysloths.jpg"> -->
+            <img class="projectItem-thumb"
+                 srcset="assets/images/madebysloths.jpg 1600w,
+                         assets/images/madebysloths-800w.jpg 800w"
+                   sizes="(min-width: 800px) 800px, 100vw"
+                   alt="Made by Sloths product page, an illustration “Which one is Tolstoy” featuring drawn portraits of Tolstoy and Darwin">
+            <h3 class="projectItem-title">Made by Sloths</h3>
+            <p class="projectItem-desc">An online store that sells stickers and illustrations by designers from all over the world. Powered by Shopify.</p>
+            <ul class="projectItem-credits">
+              <li>Development: Artur Paikin</li>
+              <li>Design: Maria Milavina</li>
+            </ul>
+          </li>
 
-			<div class="slider">
-				<img src="projects/local-1.jpg">
-				<img src="projects/local-3.jpg">
-				<img src="projects/local-2.jpg">
-				<img src="projects/local-4.jpg">
-				<img src="projects/local-6.jpg">
-			</div>
+          <li class="projectItem">
+            <img class="projectItem-thumb"
+                 srcset="assets/images/sergeykorol.jpg 1600w,
+                         assets/images/sergeykorol-800w.jpg 800w"
+                   sizes="(min-width: 800px) 800px, 100vw"
+                   alt="Blog post about Konica FP vintage photo camera">
+            <h3 class="projectItem-title"><a href="http://sergeykorol.ru/blog">Sergey Korol</a></h3>
+            <h4 class="projectItem-ref"><a href="http://sergeykorol.ru/blog">sergeykorol.ru/blog</a></h4>
+            <p class="projectItem-desc">Sergey Korol blogs about books, traveling, vintage cameras and unusual things. At Baguette we’ve redesigned blog templates for the best readability on any screen. Features: full screen images on click, image sliders and embeds, side notes and standouts from the main text.</p>
+            <ul class="projectItem-credits">
+              <li>Design & Development: Artur Paikin</li>
+            </ul>
+          </li>
 
-			<div class="work-item-description">
-				<h3>Local Food</h3>
-				<h4><a href="http://locallocal.ru">locallocal.ru</a></h4>
-				<p>Local Food organizes food markets, makes a food box from products supplied by the local farmers and offers a coworking space for the aspiring food entrepreneurs. On the website you can learn more about each of their projects, submit an application or order a food box.</p>
-				<div class="credits">Development: Artur Paikin; Design: Maria Milavina</div>
-			</div>
+          <li class="projectItem">
+            <img class="projectItem-thumb"
+                 srcset="assets/images/localfood.jpg 1600w,
+                         assets/images/localfood-800w.jpg 800w"
+                   sizes="(min-width: 800px) 800px, 100vw"
+                   alt="Local Food projects and sign up buttons">
+            <h3 class="projectItem-title"><a href="http://locallocal.ru">Local Food</a></h3>
+            <h4 class="projectItem-ref"><a href="http://locallocal.ru">locallocal.ru</a></h4>
+            <p class="projectItem-desc">Local Food organizes food markets, sells a food box full of products supplied by the local farmers and offers a coworking space for the aspiring food entrepreneurs. On the website you can learn more about each of their projects, submit an application or order a food box.</p>
+            <ul class="projectItem-credits">
+              <li>Development: Artur Paikin</li>
+              <li>Design: Maria Milavina</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </article>
 
-		</article>
-
-		<article id="sergey-korol" class="work-item">
-
-			<div class="slider">
-				<img src="projects/king-1.jpg">
-				<img src="projects/king-5.jpg">
-				<img src="projects/king-3.jpg">
-				<img src="projects/king-4.jpg">
-				<img src="projects/king-2.jpg">
-			</div>
-
-			<div class="work-item-description">
-				<h3>Sergey Korol’s Blog</h3>
-				<h4><a href="http://sergeykorol.ru/blog">sergeykorol.ru/blog</a></h4>
-				<p>Sergey Korol blogs about books, traveling and unusual things. At Baguette we’ve redesigned the blog templates: the font and line height has been increased, text size adjusts to the screen, so now readers are able to enjoy new posts on any device, wherever they are. Graphics is adapted for Retina-displays. The layout features a side column and occasional excerpts from the content.</p>
-				<div class="credits">Design and development: Artur Paikin</div>
-			</div>
-
-		</article>
-
-		<article id="arsenicum" class="work-item">
-
-			<div class="slider">
-				<img src="projects/arsenicum-1.jpg">
-				<img src="projects/arsenicum-2.jpg">
-				<img src="projects/arsenicum-3.jpg">
-				<img src="projects/arsenicum-4.jpg">
-			</div>
-
-			<div class="work-item-description">
-				<h3>Arsenicum — Dmitry Loginov’s design atelier & studio</h3>
-				<h4><a href="http://arsenicum.co.uk">arsenicum.co.uk</a></h4>
-				<p>Dmitry Loginov is a Russian fashion designer, the author of the Arsenicum brand, known for its vivid images and extraordinary show-displays of new collections. We have developed a website that unites all Arsenicum’s collections since 2005. Each collection features a soundtrack that you can listen to while browsing. </p>
-				<p><a href="http://www.the-village.ru/village/service-shopping/service/117211-na-zakaz-dizayner-dmitriy-loginov">An Interview with Dmitry Loginov</a> at The Village newspaper (in Russian).</p>
-				<div class="credits">Design and development: Artur Paikin; Art-director: Dmitry Loginov; Manager: Anna Kudashkina</div>
-			</div>
-
-		</article>
-
-		<article id="tipi-coffee" class="work-item">
-
-			<div class="slider">
-				<img src="projects/tipicoffee-5.jpg">
-				<img src="projects/tipicoffee-1.jpg">
-				<img src="projects/tipicoffee-2.jpg">
-				<img src="projects/tipicoffee-3.jpg">
-				<img src="projects/tipicoffee-4.jpg">
-			</div>
-
-			<div class="work-item-description">
-				<h3>Tipi Coffee</h3>
-				<h4><a href="http://fb.com/thetipicoffee">fb.com/thetipicoffee</a></h4>
-				<p>Tipi Coffee is a pop-up coffee shop. It appears on local food markets and events to bring the best fresh coffee to customers. We have designed and implemented a style and identity for the coffee shop: from the logo and price tag to mugs and pies. We update the Facebook page, brew slow-coffee, bake muffins and cakes.</p>
-				<div class="credits">Idea and logo: Arutr Paikin; Decoration: Elena Zaharova; Coffee roasted by: Double B, Cherny Coop</div>
-			</div>
-
-		</article>
-
-		<!-- <article id="alexander-utkin" class="work-item">
-
-			<div class="slider">
-				<img src="projects/utkin-2.jpg">
-				<img src="projects/utkin-1.jpg">
-			</div>
-
-			<div class="work-item-description">
-				<h3>Портфолио фотографа Александра Уткина</h3>
-				<h4><a href="http://alexanderutkin.com">alexanderutkin.com</a></h4>
-				<p>Александр работает фотокорреспондентом в РИА Новостях, много путешествует и фотографирует. Мы сделали для него портфолио, в котором фотографии одинаково хорошо смотрятся на любом устройстве.</p>
-				<div class="credits">Дизайн и разработка: Артур Пайкин</div>
-			</div>
-
-		</article> -->
-
-		<!-- <article id="letsbikeit" class="work-item">
-
-			<div class="slider">
-				<img src="projects/letsbikeit-6.jpg">
-				<img src="projects/letsbikeit-2.jpg">
-				<img src="projects/letsbikeit-4.jpg">
-				<img src="projects/letsbikeit-3.jpg">
-				<img src="projects/letsbikeit-7.jpg">
-			</div>
-
-			<div class="work-item-description">
-				<h3>Let’s Bike It! — путешествие по Латинской Америке на велосипедах</h3>
-				<h4><a href="http://la.letsbikeit.ru">la.letsbikeit.ru</a></h4>
-				<p>Друзья из «Let’s Bike It!» затеяли грандиозный проект: проехать 12 стран Латинской Америки на велосипедах, по пути обмениваясь опытом и рассказывая о велодвижении в этих странах. Мы сделали для них сайт и блог на русском, английском и испанском. В шапке сайта в прямом эфире отображаются фотографии из инстаграма, на карте отмечается текущее местоположение велосипедистов.</p>
-				<div class="credits">Дизайн и разработка: Артур Пайкин; Арт-директор: Владимир Кумов</div>
-			</div>
-
-		</article>
-
-		<article id="elena-zaharova" class="work-item">
-
-			<div class="slider">
-				<img src="projects/elenazaharova-1.jpg">
-				<img src="projects/elenazaharova-2.jpg">
-			</div>
-
-			<div class="work-item-description">
-				<h3>Дизайнер витрин Елена Захарова</h3>
-				<h4><a href="http://elenazaharova.com">elenazaharova.com</a></h4>
-				<p>Елена занимается дизайном витрин, пространств и предметов. Профессия такая. Её задача сделать так, чтобы витрины магазинов приглашали зайти внутрь, сумки стояли по цветам, а у покупателей было хорошее настроение. В Багете сделали сайт-портфолио и блог, где Елена публикует заметки из путешествий, обзоры туфель и рабочий процесс.</p>
-				<div class="credits">Дизайн и разработка: Артур Пайкин</div>
-			</div>
-
-		</article>
- -->
-		<!-- <article id="twell" class="work-item">
-
-			<div class="slider">
-				<img src="projects/twell-1.jpg">
-				<img src="projects/twell-2.jpg">
-				<img src="projects/twell-3.jpg">
-				<img src="projects/twell-6.jpg">
-				<img src="projects/twell-7.jpg">
-			</div>
-
-			<div class="work-item-description">
-				<h3>Компания «Твэлл»</h3>
-				<p>Твэлл занимается промышленной автоматикой, судостроением, энергетикой и не только. В Багете сделали красивый современный сайт, рассказывающий о компании и еë технологиях.</p>
-				<div class="credits">Дизайн и разработка: Артур Пайкин; Менеджеры: Надежда Петрова и Николай Снетков</div>
-			</div>
-
-		</article>
- -->
-
-	</section>
-
-	<script>
-	$('.slider').fotorama({
-		maxWidth: '100%',
-		maxHeight: '620px',
-		transition: 'crossfade',
-		loop: true,
-		arrows: false,
-		click: true,
-		shadows: false
-	});
-
-	if (window.DeviceOrientationEvent) {
-		window.addEventListener('orientationchange', setMastheadHeight, false);
-	}
-
-	function setMastheadHeight() {
-		var windowHeight = $(window).height();
-		if (windowHeight > 600 && windowHeight < 1000) {
-			$('.masthead').css('height', windowHeight);
-		} else {
-			$('.masthead').css('height', 700);
-		}
-	}
-
-	function changeBackground() {
-		var mastheadBackgrounds = Array('hatshop', 'parade', 'bridge');
-		var backgroundImage = getRandomArrayElements(mastheadBackgrounds, 1);
-		$('.masthead').css('background-image', 'url(' + 'bg/' + backgroundImage + '.jpg' + ')');
-	}
-
-	function getRandomArrayElements(arr, count) {
-		var randoms = [], clone = arr.slice(0);
-		for (var i = 0, index; i < count; ++i) {
-			index = Math.floor(Math.random() * clone.length);
-			randoms.push(clone[index]);
-			clone[index] = clone.pop();
-		}
-		return randoms;
-	}
-
-	function navScroll() {
-		$('.projects-link').click(function (e) {
-			e.preventDefault();
-			scrollToSection("#projects");
-		});
-	}
-
-	function scrollToSection(mySection) {
-		var positionTo = $(mySection).offset().top-30;
-		$('html, body').animate({scrollTop:positionTo + 'px'}, 300, 'swing');
-	}
-
-	navScroll();
-	setMastheadHeight();
-	changeBackground();
-	</script>
-
-	<!-- Yandex.Metrika counter -->
-	<script>(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter17063677 = new Ya.Metrika({id:17063677, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/17063677" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-	<!-- /Yandex.Metrika counter -->
-
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
