@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<title>Курс веб-разработки для начинающих</title>
+<link href="http://fonts.googleapis.com/css?family=PT+Sans|PT+Serif:400,700,400italic&subset=latin,cyrillic" rel="stylesheet">
+<style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+    }
+
+  	body {
+  		font-family: 'PT Serif', serif;
+      -webkit-font-smoothing: antialiased;
+  	}
+
+    img {
+      max-width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+      background-image: linear-gradient(transparent 84%, currentColor 84%, currentColor 88%, transparent 88%);
+    }
+
+  	article {
+  		max-width: 700px;
+  		margin: 1em auto;
+  		font-size: 20px;
+  		line-height: 1.35;
+  		word-wrap: break-word;
+  	}
+
+  	h2 {
+      font-size: 1.35em;
+      line-height: 1.2;
+  		margin-top: 1.5em;
+  		margin-bottom: 0.7em;
+  	}
+
+  	/*h2:first-of-type {
+  		margin-top: 0;
+  	}*/
+
+  	a {
+  		color: #000;
+  	}
+
+  	ol li {
+  		margin-bottom: 1em;
+  	}
+
+    ul li {
+      margin-bottom: 0.6em;
+    }
+
+  	.yandex-payment {
+  		border: 1px solid #e8e8e8;
+  		height: 417px;
+  		width: 100%;
+  		max-width: 500px;
+  	}
+
+  	address {
+  		font-style: normal;
+  		line-height: 1.6;
+  	}
+
+    .top-header {
+      height: 600px;
+      background-size: cover;
+      background-position: 50% 50%;
+      background-image: url('IMG_1949.jpg');
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin-bottom: 2em;
+    }
+
+    .top-header:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0,0,0, 0.5);
+    }
+
+    .top-header__group {
+      color: #fff;
+      z-index: 5;
+      position: relative;
+      max-width: 900px;
+    }
+
+    .top-header__title {
+      font-size: 50px;
+      line-height: 1.15;
+      font-weight: normal;
+      margin-bottom: 0.5em;
+      max-width: 800px;
+    }
+
+    .top-header__subtitle {
+      font-size: 25px;
+      line-height: 1.2;
+      font-weight: normal;
+      margin-top: 0;
+    }
+
+    .lead {
+      font-family: 'PT Sans', sans-serif;
+      font-size: 1.15em;
+    }
+  </style>
+</head>
+
+<body>
+<header class="top-header">
+<hgroup class="top-header__group">
+<h1 class="top-header__title">Четырехдневный практический курс по веб-разработке для начинающих</h1>
+<h2 class="top-header__subtitle">HTML, CSS, JavaScript. Как сделать веб-страницу и приложение</h2>
+</hgroup>
+</header>
+
+<article>
+  <p class="lead">Меня зовут Артур Пайкин, я веб-разработчик.
+  Приглашаю вас на свой курс по веб-разработке для начинающих: HTML, CSS и JavaScript.
+  Курс пройдет в коворкинге <a href="http://coworkstation.ru">Рабочая станция</a> в Парке Горького,
+  в течение 4 выходных дней: 24 октября, 25 октября и 31 октября, 1 ноября, с 15 до 20 часов.
+  С перерывами на чаепитие.</p>
+
+  <h2>Чему вы научитесь</h2>
+  <p>Мы каждый день пользуемся интернетом, но многие не знают, как он работает.
+  Что происходит, когда на экране компьютера открывается сайт, а вы нажимаете на кнопку «отправить»?
+  Как эта кнопка вообще оказалась на экране? Как сверстать список любимых кофеен для поста в блоге или вынести картинку на поля?
+  Как реализовать свою идею веб-приложения? С чего начать, чтобы стать разработчиком и программистом?</p>
+  <p>За несколько дней вы сделаете несколько небольших веб-страниц и приложений. Станете понимать, о чем говорят коллеги на работе («там див не закрылся») и сможете лучше формулировать задачи. Поймете, как прекрасен этот мир и продолжите изучать веб-разработку и программирование самостоятельно.</p>
+
+  <h2>Программа курса</h2>
+  <ol>
+  <li><strong>День первый</strong>. Введение — как работает интернет, что происходит, когда вы вводите в браузере «yandex.ru». Браузеры и их возможности. Веб-инспектор. Что такое HTML-разметка и семантическая верстка. Как пользоваться редактором кода Atom. Применяем стили к HTML-элементам с помощью CSS. Github, Open Source, Stackoverflow, как учиться на реальных задачах.</li>
+  <li><strong>День второй</strong>. Верстка и сетка: блоки, колонки. Наборы готовых элементов и фреймворки: Bootstrap, Pure. Типографика, использование веб-шрифтов. Адаптивный дизайн: как изменять вид страницы для разных устройств и размеров экрана — смартфон, планшет, десктоп, телевизор. Анимации и эффекты с помощью CSS.</li>
+  <li><strong>День третий</strong>. Язык программирования JavaScript — переменные, функции и операторы. Оживляем страницы, реакция на действия пользователей. Знакомство с библиотекой jQuery. Создание небольших приложений.</li>
+  <li><strong>День четвертый</strong>. Разработчики и блоги, которые стоит читать. Конференции по разработке в России и мире. Как выложить готовый сайт или страницу в интернет: домены и хостинги. Дальнейшие шаги: онлайн-курсы и учебники.</li>
+  </ol>
+
+  <p>Я строю обучение на практике.
+  Мы сделаем несколько страниц (о себе, страницу товара в интернет-магазине с работающей кнопкой заказа, пост в блоге),
+  приложение с прогнозом погоды, напишем робота (я люблю роботов),
+  который сможет вести диалог голосом или текстом.
+  Я буду подходить к вам лично, отвечать на вопросы и пояснять непонятные моменты.</p>
+
+  <h2>О преподавателе</h2>
+  <img src="IMG_3544.jpg">
+  <p>Артур Пайкин, веб-разработчик в своем <a href="http://unebaguette.com">бюро Багет</a>, путешественник.
+  Работал менеджером в Студии Лебедева, специалистом службы поддержки пользователей и веб-разрабочиком в LiveJournal (Живой Журнал).
+  Занимается разработкой с 12 лет. Начал путь с прохождения Prehistorik 2 на Intel 386.</p>
+  <p>Сайты и проекты: <a href="http://unebaguette.com">unebaguette.com</a>, аккаунт на Гитхабе: <a href="http://github.com/arturi">github.com/arturi</a>.
+  </p>
+
+  <h2>Условия</h2>
+  <ul>
+  <li>4 выходных дня: 24 октября, 25 октября и 31 октября, 1 ноября.<br>
+  С 15 до 20 часов.</li>
+  <li>На русском языке (но специальный гость Капитан расскажет о том, что английский — это очень круто).</li>
+  <li>Вам понадобится ноутбук с браузером Chrome и редактор кода Atom.</li>
+  <li>Стоимость курса — 10 000 рублей.</li>
+  </ul>
+
+  <h2>Регистрация и оплата</h2>
+  <p>При оплате услуг вы принимаете условия <a href="https://docs.google.com/document/d/1UYathq2MjXbDiKdcXsTJrQblxzo8NePmLU7r3IdbAxI/edit?usp=sharing" target="_blank">оферты</a>.</p>
+  <iframe class="iframe" src="https://money.yandex.ru/fastpay/form/b613998662a54623a1dc59ad1e46177d" width="500" height="432" style="border: 1px solid #e8e8e8;"></iframe>
+
+  <h2>Контакты и реквизиты</h2>
+  <p>По всем вопросам пишите: <a href="mailto:artur@arturpaikin.com">artur@arturpaikin.com</a></p>
+
+  <address>
+    <p>Индивидуальный предприниматель Пайкин Артур Борисович<br>
+    ИНН: 463205655740, ОГРНИП: 313312314800011<br>
+    E-mail: artur@arturpaikin.com<br>
+  </address>
+</article>
+</body>
+</html>
