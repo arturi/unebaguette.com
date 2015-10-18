@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
 <title>Курс веб-разработки для начинающих</title>
-<link href="http://fonts.googleapis.com/css?family=PT+Sans|PT+Serif:400,700,400italic&subset=latin,cyrillic" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Lora|PT+Sans|PT+Serif:400,700,400italic&subset=latin,cyrillic" rel="stylesheet">
 <style>
     body,
     html {
@@ -13,7 +13,7 @@
     }
 
   	body {
-  		font-family: 'PT Serif', serif;
+  		font-family: 'PT Sans', serif;
       -webkit-font-smoothing: antialiased;
   	}
 
@@ -26,26 +26,68 @@
       background-image: linear-gradient(transparent 84%, currentColor 84%, currentColor 88%, transparent 88%);
     }
 
+    .top-header {
+      height: 550px;
+      background-size: cover;
+      background-position: 50% 50%;
+      background-image: url('IMG_1949.jpg');
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin-bottom: 2em;
+    }
+
+    .top-header:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0,0,0, 0.45);
+    }
+
+    .top-header__group {
+      color: #fff;
+      z-index: 5;
+      position: relative;
+      max-width: 700px;
+    }
+
+    .top-header__title {
+      font-family: Lora, 'PT Serif', Tahoma, serif;
+      font-size: 50px;
+      line-height: 1.1;
+      font-weight: normal;
+      margin-bottom: 0.5em;
+    }
+
+    .top-header__subtitle {
+      font-family: 'PT Sans', sans-serif;
+      font-size: 22px;
+      line-height: 1.2;
+      font-weight: normal;
+      margin-top: 0;
+    }
+
   	article {
   		max-width: 700px;
   		margin: 0 auto;
       margin-top: 1em;
       margin-bottom: 2em;
-  		font-size: 20px;
+  		font-size: 21px;
   		line-height: 1.35;
   		word-wrap: break-word;
   	}
 
   	h2 {
+      font-family: Lora, serif;
       font-size: 1.35em;
       line-height: 1.2;
-  		margin-top: 1.5em;
+  		margin-top: 1.7em;
   		margin-bottom: 0.7em;
   	}
-
-  	/*h2:first-of-type {
-  		margin-top: 0;
-  	}*/
 
   	a {
   		color: #000;
@@ -66,54 +108,45 @@
   		max-width: 500px;
   	}
 
+    .form {
+      margin-bottom: 1em;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.9em;
+      margin-bottom: 0.3em;
+      color: #595858;
+    }
+
+    .form-text {
+      display: block;
+      width: 300px;
+      /*max-width: 500px;*/
+      padding: 8px 12px;
+      border: 1px solid #e8e8e8;
+      margin-bottom: 1.5em;
+      font-size: 0.8em;
+    }
+
+    .form-btn {
+      background: none;
+      border: 0;
+      font-family: inherit;
+      font-size: inherit;
+      border: 1px solid #e8e8e8;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+
+    .form-btn:hover {
+      background-color: #e8e8e8;
+    }
+
   	address {
   		font-style: normal;
   		line-height: 1.6;
   	}
-
-    .top-header {
-      height: 600px;
-      background-size: cover;
-      background-position: 50% 50%;
-      background-image: url('IMG_1949.jpg');
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      margin-bottom: 2em;
-    }
-
-    .top-header:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-color: rgba(0,0,0, 0.5);
-    }
-
-    .top-header__group {
-      color: #fff;
-      z-index: 5;
-      position: relative;
-      max-width: 900px;
-    }
-
-    .top-header__title {
-      font-size: 56px;
-      line-height: 1.1;
-      font-weight: normal;
-      margin-bottom: 0.5em;
-      /*max-width: 800px;*/
-    }
-
-    .top-header__subtitle {
-      font-size: 25px;
-      line-height: 1.2;
-      font-weight: normal;
-      margin-top: 0;
-    }
 
     .lead {
       font-family: 'PT Sans', sans-serif;
@@ -142,21 +175,21 @@
   <p>Мы каждый день пользуемся интернетом, но многие не знают, как он работает.
   Что происходит, когда на экране компьютера открывается сайт, а вы нажимаете на кнопку «отправить»?
   Как эта кнопка вообще оказалась на экране? Как сверстать список любимых кофеен для поста в блоге или вынести картинку на поля?
-  Как реализовать свою идею веб-приложения? С чего начать, чтобы стать разработчиком и программистом?</p>
+  Как сделать прототип своей идеи? С чего начать, чтобы стать разработчиком и программистом?</p>
 
   <ul>
     <li>Вы сделаете несколько небольших веб-страниц и приложений.</li>
-    <li>Сможете сами сделать простой одностраничный сайт для своего нового проекта.</li>
+    <li>Сможете сами сверстать простой одностраничный сайт для своего нового проекта.</li>
     <li>Станете понимать, о чем говорят коллеги на работе («там див не закрылся») и будете лучше формулировать задачи.</li>
     <li>Поймете, как прекрасен этот мир и продолжите изучать веб-разработку и программирование самостоятельно.</li>
   </ul>
 
   <h2>Программа курса</h2>
   <ol>
-  <li><strong>День первый</strong>. Введение — как работает интернет, что происходит, когда вы вводите в браузере «yandex.ru». Браузеры и их возможности. Веб-инспектор. Что такое HTML-разметка и семантическая верстка. Как пользоваться редактором кода Atom. Применяем стили к HTML-элементам с помощью CSS. Github, Open Source, Stackoverflow, как учиться на реальных задачах.</li>
+  <li><strong>День первый</strong>. Введение — как работает интернет, что происходит, когда вы вводите в браузере «yandex.ru». Браузеры и их возможности. Веб-инспектор. Что такое HTML-разметка и семантическая верстка. Как пользоваться редактором кода Atom. Применяем стили к HTML-элементам с помощью CSS. Github, Open Source, Stackoverflow — как учиться на реальных задачах.</li>
   <li><strong>День второй</strong>. Верстка и сетка: блоки, колонки. Наборы готовых элементов и фреймворки: Bootstrap, Pure. Типографика, использование веб-шрифтов. Адаптивный дизайн: как изменять вид страницы для разных устройств и размеров экрана — смартфон, планшет, десктоп, телевизор. Анимации и эффекты с помощью CSS. Векторная графика, SVG.</li>
   <li><strong>День третий</strong>. Язык программирования JavaScript — переменные, функции и операторы. Оживляем страницы, реакция на действия пользователей. Знакомство с библиотекой jQuery. Создание небольших приложений.</li>
-  <li><strong>День четвертый</strong>. Разработчики и блоги, которые стоит читать. Конференции по разработке в России и мире. Как выложить готовый сайт или страницу в интернет: домены и хостинги. Дальнейшие шаги: онлайн-курсы и учебники.</li>
+  <li><strong>День четвертый</strong>. Соединям то, чему научились, вместе: верстаем страницы, делаем приложения. О разработчиках и блогах, на которые стоит подписаться. Конференции по разработке в России и мире. Как выложить готовый сайт или страницу в интернет: домены и хостинги. Дальнейшие шаги: онлайн-курсы и учебники.</li>
   </ol>
 
   <p>Я строю обучение на практике.
@@ -183,8 +216,21 @@
   </ul>
 
   <h2>Регистрация</h2>
+  <form class="form" action="https://docs.google.com/a/arturpaikin.com/forms/d/1tg3-E7CjRiKz_7UJjdOZ5HHTCy8oqEV5J18FFWe4DjI/formResponse?embedded=true" method="POST" id="ss-form" target="_self">
+    <label class="form-label" for="entry_1796852456">Имя и фамилия</label>
+    <input class="form-text" type="text" name="entry.1796852456" value="" class="ss-q-short" id="entry_1796852456" dir="auto" aria-label="Имя и фамилия  " aria-required="true" placeholder="Ирина Зотова" required>
+    <label class="form-label" for="entry_1709467611">Адрес e-mail</label>
+    <input class="form-text" type="email" name="entry.1709467611" value="" class="ss-q-short" id="entry_1709467611" dir="auto" aria-label="Адрес e-mail  " aria-required="true" placeholder="zotova@ya.ru" required>
+    <label class="form-label" for="entry_1772618281">О себе кратко, чем занимаетесь, знакомы ли с HTML/CSS/JS</label>
+    <input class="form-text" type="text" name="entry.1772618281" value="" class="ss-q-short" id="entry_1772618281" dir="auto" aria-label="О себе кратко, чем занимаетесь, знакомы ли с HTML/CSS/JS" placeholder="журналист, немного умею верстать">
+    <input type="hidden" name="draftResponse" value="[,,&quot;7080239550040301458&quot;]">
+    <input type="hidden" name="pageHistory" value="0">
+    <input type="hidden" name="fvv" value="0">
+    <input type="hidden" name="fbzx" value="7080239550040301458">
+    <input class="form-btn" type="submit" name="submit" value="Отправить" id="ss-submit">
+  </form>
 
-  <iframe src="https://docs.google.com/forms/d/1tg3-E7CjRiKz_7UJjdOZ5HHTCy8oqEV5J18FFWe4DjI/viewform?embedded=true" width="100%" height="750" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+  <!-- <iframe src="https://docs.google.com/forms/d/1tg3-E7CjRiKz_7UJjdOZ5HHTCy8oqEV5J18FFWe4DjI/viewform?embedded=true" width="100%" height="750" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
 
   <!--p>При оплате услуг вы принимаете условия <a href="https://docs.google.com/document/d/1UYathq2MjXbDiKdcXsTJrQblxzo8NePmLU7r3IdbAxI/edit?usp=sharing" target="_blank">оферты</a>.</p>
   <iframe class="yandex-payment" src="https://money.yandex.ru/fastpay/form/e03e22bb255f4c11876912f47171ab27"></iframe -->
