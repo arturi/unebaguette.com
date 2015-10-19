@@ -42,7 +42,7 @@
       background-size: cover;
       background-position: 50% 100%;
       background-image: url('laptop-code.jpg');
-      display: -webkit-box;
+      /*display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
@@ -53,9 +53,10 @@
       -webkit-box-align: center;
       -webkit-align-items: center;
       -ms-flex-align: center;
-      align-items: center;
+      align-items: center;*/
       position: relative;
       margin-bottom: 2em;
+      transform-style: preserve-3d;
     }
 
     .top-header:after {
@@ -73,7 +74,11 @@
       z-index: 5;
       position: relative;
       max-width: 700px;
+      margin: auto;
       padding: 0 30px;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
     }
 
     .top-header__title {
@@ -82,6 +87,7 @@
       line-height: 1.2;
       font-weight: normal;
       margin-bottom: 1em;
+      margin-top: 0;
     }
 
     .top-header__subtitle {
@@ -98,7 +104,7 @@
         }
 
         .top-header__title {
-          font-size: 50px;
+          font-size: 48px;
           margin-bottom: 0.5em;
         }
 
