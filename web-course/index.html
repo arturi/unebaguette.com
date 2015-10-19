@@ -150,6 +150,14 @@
 
     ul li {
       margin-bottom: 0.6em;
+      margin-left: 0.5em;
+      list-style: none;
+    }
+
+    ul li:before {
+      position: absolute;
+      content: '—';
+      text-indent: -1.2em;
     }
 
   	.yandex-payment {
@@ -230,6 +238,33 @@
       font-weight: bold;
       border: 2px solid black;
     }
+
+    .testimonials {
+      max-width: 550px;
+      /*margin: auto;*/
+    }
+
+    .testimonials-text {
+      font-size: 0.9em;
+      line-height: 1.25;
+      margin-bottom: 0.5em;
+    }
+
+    .testimonials-author {
+      font-size: 16px;
+      line-height: 1.2;
+      color: #838383;
+      margin-bottom: 2em;
+      margin-left: 0;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .testimonials-author:before {
+      content: '—';
+      position: absolute;
+      left: 0;
+    }
   </style>
 </head>
 
@@ -245,11 +280,16 @@
 <article>
   <div class="lead">
     <p>Меня зовут Артур Пайкин, я веб-разработчик.
-  Приглашаю вас на свой четырехдневный курс веб-разработки для начинающих: HTML, CSS и JavaScript.
-  Курс пройдет в Москве, в коворкинге <a href="http://coworkstation.ru">Рабочая станция</a> в Парке Горького,
-  в течение 4 выходных дней: 31 октября, 1 ноября и 7 ноября, 8 ноября, с 15 до 20 часов. Всего 20 часов.
-  С перерывами на чаепитие.</p>
-    <p>Стоимость: 10 000 рублей, осталось 10 мест из 12.</p>
+  Приглашаю вас на свой четырехдневный практический курс веб-разработки для начинающих: HTML, CSS и JavaScript.
+  </p>
+    <ul>
+      <li>Курс пройдет в Москве, в коворкинге <a href="http://coworkstation.ru">Рабочая станция</a> в Парке Горького.</li>
+      <li>4 выходных дня: 31 октября, 1 ноября и 7 ноября, 8 ноября.</li>
+      <li>С 15 до 20 часов. С перерывами на чаепития. Всего 20 часов.</li>
+      <li>Стоимость: 10 000 рублей.</li>
+      <li>Осталось 10 мест из 12.</li>
+    </ul>
+
     <a class="signup-btn" href="#register">Записаться на курс</a>
   </div>
 
@@ -288,14 +328,16 @@
   <p>Сайты и проекты: <a href="http://unebaguette.com">unebaguette.com</a>, аккаунт на Гитхабе: <a href="http://github.com/arturi">github.com/arturi</a>.
   </p>
 
-  <h2 id="terms">Условия</h2>
-  <ul>
-    <li>4 выходных дня: 31 октября, 1 ноября и 7 ноября, 8 ноября.<br>
-    С 15 до 20 часов.</li>
-    <li>На русском языке (но специальный гость Капитан расскажет о том, что английский — это очень круто).</li>
-    <li>Вам понадобится ноутбук с браузером <a href="https://www.google.com/chrome/browser/desktop/">Chrome</a> и редактор кода <a href="https://atom.io/">Atom</a>.</li>
-    <li>Стоимость курса — 10 000 рублей.</li>
-  </ul>
+  <h2 id="testimonials">Отзывы</h2>
+  <dl class="testimonials">
+    <dt class="testimonials-text">«Мои сайты делал отличный разработчик — Артур.<br> Я искренне могу его рекомендовать».</dt>
+    <dd class="testimonials-author">Михаил Иванов, основатель издательства<br> «Манн, Иванов и Фербер» и Smart Reading</dd>
+    <dt class="testimonials-text">«Время от времени я донимаю Артура вопросами о том, как работает база данных, чем джава отличается от жабы, и всём таком.
+      Артур всегда с удовольствием, подробно и понятно рассказывал мне об этом. Теперь и вы сможете всё это послушать».</dt>
+    <dd class="testimonials-author">Сергей Король, независимый редактор</dd>
+    <dt class="testimonials-text">«С головой, упорством и тщательностью Артура научить программировать можно даже ежа. Налетай)».</dt>
+    <dd class="testimonials-author">Наталья Касьянова, режиссер-документалист</dd>
+  </dl>
 
   <h2 id="register">Регистрация</h2>
   <form class="form" action="https://docs.google.com/a/arturpaikin.com/forms/d/1tg3-E7CjRiKz_7UJjdOZ5HHTCy8oqEV5J18FFWe4DjI/formResponse?embedded=true" method="POST" id="ss-form" target="_self">
