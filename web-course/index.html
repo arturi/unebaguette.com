@@ -41,7 +41,7 @@
     .top-header {
       height: 100vh;
       min-height: 450px;
-      max-height: 650px;
+      max-height: 570px;
       background-size: cover;
       background-position: 50% 100%;
       background-image: url('laptop-code.jpg');
@@ -207,6 +207,28 @@
       font-family: 'PT Sans', sans-serif;
       font-size: 1.15em;
     }
+
+    .signup-block {
+      margin-top: 2.5em;
+      margin-bottom: 0.7em;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .signup-btn {
+      background: none;
+      color: black;
+      padding: 17px 10px;
+      margin-top: 1em;
+      display: block;
+      font-size: 18px;
+      line-height: 1;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: bold;
+      border: 2px solid black;
+    }
   </style>
 </head>
 
@@ -220,13 +242,17 @@
 </header>
 
 <article>
-  <p class="lead">Меня зовут Артур Пайкин, я веб-разработчик.
+  <div class="lead">
+    <p>Меня зовут Артур Пайкин, я веб-разработчик.
   Приглашаю вас на свой четырехдневный курс веб-разработки для начинающих: HTML, CSS и JavaScript.
   Курс пройдет в Москве, в коворкинге <a href="http://coworkstation.ru">Рабочая станция</a> в Парке Горького,
   в течение 4 выходных дней: 31 октября, 1 ноября и 7 ноября, 8 ноября, с 15 до 20 часов. Всего 20 часов.
   С перерывами на чаепитие.</p>
+    <p>Стоимость: 10 000 ₽, осталось 10 мест из 12.</p>
+    <a class="signup-btn" href="#register">Записаться на курс</a>
+  </div>
 
-  <h2>Чему вы научитесь</h2>
+  <h2 id="why">Чему вы научитесь</h2>
   <p>Мы каждый день пользуемся интернетом, но многие не знают, как он работает.
   Что происходит, когда на экране компьютера открывается сайт, а вы нажимаете на кнопку «отправить»?
   Как эта кнопка вообще оказалась на экране? Как сверстать список любимых кофеен для поста в блоге или вынести картинку на поля?
@@ -239,7 +265,7 @@
     <li>Поймете, как прекрасен этот мир, и продолжите изучать веб-разработку и программирование самостоятельно.</li>
   </ul>
 
-  <h2>Программа курса</h2>
+  <h2 id="schedule">Программа курса</h2>
   <ol>
     <li><strong>День первый</strong>. Введение — как работает интернет, что происходит, когда вы вводите в браузере «yandex.ru». Браузеры и их возможности. Веб-инспектор. Что такое HTML-разметка и семантическая верстка. Как пользоваться редактором кода Atom. Применяем стили к HTML-элементам с помощью CSS. Github, Open Source, Stackoverflow — как учиться на реальных задачах.</li>
     <li><strong>День второй</strong>. Верстка и сетка: блоки, колонки. Наборы готовых элементов и фреймворки: Bootstrap, Pure. Типографика, использование веб-шрифтов. Адаптивный дизайн: как изменять вид страницы для разных устройств и размеров экрана — смартфон, планшет, десктоп, телевизор. Анимации и эффекты с помощью CSS. Векторная графика, SVG.</li>
@@ -253,7 +279,7 @@
   который сможет вести диалог голосом или текстом, и радиоплеер.
   Я буду подходить к вам лично, отвечать на вопросы и пояснять непонятные моменты.</p>
 
-  <h2>О преподавателе</h2>
+  <h2 id="teacher">О преподавателе</h2>
   <img src="IMG_3544.jpg">
   <p>Артур Пайкин, веб-разработчик в своем <a href="http://unebaguette.com">бюро Багет</a>, путешественник.
   Работал менеджером в Студии Лебедева, специалистом службы поддержки пользователей и веб-разрабочиком в LiveJournal (Живой Журнал).
@@ -261,7 +287,7 @@
   <p>Сайты и проекты: <a href="http://unebaguette.com">unebaguette.com</a>, аккаунт на Гитхабе: <a href="http://github.com/arturi">github.com/arturi</a>.
   </p>
 
-  <h2>Условия</h2>
+  <h2 id="terms">Условия</h2>
   <ul>
     <li>4 выходных дня: 31 октября, 1 ноября и 7 ноября, 8 ноября.<br>
     С 15 до 20 часов.</li>
@@ -270,7 +296,7 @@
     <li>Стоимость курса — 10 000 рублей.</li>
   </ul>
 
-  <h2>Регистрация</h2>
+  <h2 id="register">Регистрация</h2>
   <form class="form" action="https://docs.google.com/a/arturpaikin.com/forms/d/1tg3-E7CjRiKz_7UJjdOZ5HHTCy8oqEV5J18FFWe4DjI/formResponse?embedded=true" method="POST" id="ss-form" target="_self">
     <label class="form-label" for="entry_1796852456">Имя и фамилия</label>
     <input class="form-input" type="text" name="entry.1796852456" value="" class="ss-q-short" id="entry_1796852456" dir="auto" aria-label="Имя и фамилия  " aria-required="true" placeholder="Ирина Зотова" required>
@@ -282,7 +308,7 @@
     <input type="hidden" name="pageHistory" value="0">
     <input type="hidden" name="fvv" value="0">
     <input type="hidden" name="fbzx" value="7080239550040301458">
-    <input class="form-btn" type="submit" name="submit" value="Отправить" id="ss-submit">
+    <input class="form-btn" type="submit" name="submit" value="Записаться" id="ss-submit">
   </form>
 
   <!-- <iframe src="https://docs.google.com/forms/d/1tg3-E7CjRiKz_7UJjdOZ5HHTCy8oqEV5J18FFWe4DjI/viewform?embedded=true" width="100%" height="750" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
