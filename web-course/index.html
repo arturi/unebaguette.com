@@ -19,8 +19,7 @@
 <link rel="icon" type="image/png" href="webcourse.png">
 <link rel="apple-touch-icon-precomposed" href="webcourse.png">
 <style>
-    body,
-    html {
+    body, html, ul, ol {
       margin: 0;
       padding: 0;
     }
@@ -91,6 +90,14 @@
       margin-top: 0;
     }
 
+    ul { margin-left: 1em; }
+    ol { margin-left: 1.6em; }
+
+    @media (min-width: 769px) {
+      ul { margin-left: 1.5em; }
+      ol { margin-left: 2.3em; }
+    }
+
       @media (min-width: 769px) {
 
         .top-header__group {
@@ -109,7 +116,7 @@
 
   	article {
   		max-width: 700px;
-      padding: 0 10px;
+      padding: 0 15px;
   		margin: 0 auto;
       margin-top: 1em;
       margin-bottom: 2em;
