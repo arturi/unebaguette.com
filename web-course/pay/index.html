@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Оплата курса по веб-разработке</title>
+  <link href="http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic&subset=latin,cyrillic" rel="stylesheet">
+  <style>
+  	body {
+  		font-family: 'PT Serif', serif;
+  	}
+
+  	article {
+  		max-width: 600px;
+  		margin: 1em auto;
+  		font-size: 18px;
+  		line-height: 1.4;
+  		word-wrap: break-word;
+  	}
+
+  	h2 {
+  		margin-top: 60px;
+  		margin-bottom: 20px;
+  		line-height: 1.2;
+  	}
+
+  	h2:first-of-type {
+  		margin-top: 0;
+  	}
+
+  	a {
+  		color: #000;
+  	}
+
+  	ol li {
+  		margin-bottom: 1em;
+  	}
+
+    .form {
+      margin-top: 2em;
+      margin-bottom: 1em;
+    }
+
+    .form-label {
+      display: block;
+      font-family: 'PT Sans', sans-serif;
+      font-size: 0.85em;
+      line-height: 1.45;
+      margin-bottom: 0.3em;
+      color: #595858;
+    }
+
+    .form-input {
+      display: block;
+      width: 260px;
+      max-width: 100%;
+      font-family: 'PT Sans', sans-serif;
+      font-size: 0.7em;
+      padding: 8px 12px;
+      border: 1px solid #e8e8e8;
+      margin-bottom: 1.5em;
+      border-radius: 0;
+      -webkit-appearance: none;
+    }
+
+    .form-btn {
+      background: none;
+      border: 0;
+      font-family: 'PT Sans', sans-serif;
+      font-size: 0.8em;
+      border: 1px solid #e8e8e8;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+
+      .form-btn:hover {
+        background-color: #e8e8e8;
+      }
+
+  	address {
+  		font-style: normal;
+  		line-height: 1.6;
+  	}
+  </style>
+</head>
+
+<body>
+	<article>
+			<h2>Оплата курса по веб-разработке</h2>
+			<p>При оплате услуг вы принимаете условия <a href="https://docs.google.com/document/d/1UYathq2MjXbDiKdcXsTJrQblxzo8NePmLU7r3IdbAxI/edit?usp=sharing" target="_blank">оферты</a>.<br>
+
+      <h2>Банковской картой</h2>
+      <p>Оплата производится банковской картой через <a href="http://kassa.yandex.ru">Яндекс.Кассу</a>.<br>
+        После нажатия на кнопку «Оплатить», вы будете перенаправлены на страницу с защищенным соединением.</p>
+      <p>Сумма: 10 000 рублей.</p>
+
+      <form class="form js-form" name=ShopForm method="POST" action="https://money.yandex.ru/eshop.xml">
+        <label class="form-label">Имя и фамилия</label>
+        <input class="form-input js-customerName" type=text name="CustName" size="43" placeholder="Ирина Зотова" required>
+        <label class="form-label">E-mail</label>
+        <input class="form-input js-customerEmail" type=text name="CustEMail" size="43" placeholder="zotova@ya.ru" required>
+
+        <input type="hidden" name="scid" value="8375">
+        <input type="hidden" name="ShopID" value="17026">
+        <input type="hidden" class="js-customerEmailCps" name="cps_email">
+        <input type="hidden" class="js-customerNumber" name="customerNumber" value="web-course-2015-10">
+        <input type="hidden" name="Sum" value="10000">
+        <input type="hidden" name="orderDetails" value="Оплата участия в курсе по веб-разработке, без НДС">
+
+        <input type="hidden" name="paymentType" value="AC">
+        <input type="hidden" name="shopSuccessURL" value="http://unebaguette.com/web-course">
+        <input type="hidden" name="shopFailURL" value="http://unebaguette.com/web-course">
+
+        <input class="form-btn js-formSubmit" type=submit value="Оплатить">
+      </form>
+
+      <h2>Переводом по реквизитам</h2>
+			<address>
+			 	Индивидуальный предприниматель Пайкин Артур Борисович<br>
+			 	ИНН: 463205655740, ОГРНИП: 313312314800011<br>
+			 	Расчетный счёт: 40802810370010001127<br>
+			 	в Московский Филиал ОАО КБ «Региональный кредит»<br>
+			 	Корреспондентский счёт: 30101810000000000340<br>
+			 	БИК: 044583340<br>
+			 	E-mail: artur@arturpaikin.com<br>
+        Назначение платежа: Оплата участия в курсе по веб-разработке, без НДС<br>
+        Сумма: 10 000 рублей
+	 		</address>
+    </article>
+
+  <script>
+    function ready(fn) {
+      if (document.readyState != 'loading') {
+        fn();
+      } else {
+        document.addEventListener('DOMContentLoaded', fn);
+      }
+    }
+
+    function formActions() {
+      var form = document.querySelectorAll('.js-form');
+      var formSubmit = document.querySelectorAll('.js-formSubmit');
+      var customerName = document.querySelectorAll('.js-customerName');
+      var customerEmail = document.querySelectorAll('.js-customerEmail');
+      var customerEmailCps = document.querySelectorAll('.js-customerEmailCps');
+      var customerNumber = document.querySelectorAll('.js-customerNumber');
+
+      formSubmit[0].addEventListener('click', function(e) {
+        e.preventDefault();
+        // set customerNumber from email and current timestamp
+        var newCustomerNumber = customerEmail[0].value + '_' + Date.now();
+        customerNumber[0].setAttribute('value', newCustomerNumber);
+        // set email_cps to please Yandex
+        customerEmailCps[0].setAttribute('value', customerEmail[0].value);
+        form[0].submit();
+        // alert(newCustomerNumber);
+      });
+    }
+
+    ready(formActions);
+  </script>
+</body>
+</html>
