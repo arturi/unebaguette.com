@@ -301,7 +301,7 @@
       <li>4 выходных дня: 31 октября, 1 ноября и 7 ноября, 8 ноября.</li>
       <li>С 15 до 20 часов. С перерывами на чаепития. Всего 20 часов.</li>
       <li>Стоимость: 10 000 рублей.</li>
-      <li>Осталось 5 мест из 12.</li>
+      <li>Осталось 4 места из 12.</li>
     </ul>
 
     <a class="signup-btn" href="#register">Записаться на курс</a>
@@ -387,6 +387,41 @@
     ИНН: 463205655740, ОГРНИП: 313312314800011<br>
   </address>
 </article>
+
+<script>
+  var PAGE_URL = 'http://unebaguette.com/web-course/';
+
+  function getJSON(url, done) {
+    var request = new XMLHttpRequest();
+    request.open('GET', url, true);
+
+    request.onload = function() {
+      if (request.status >= 200 && request.status < 400) {
+        // Success!
+        var data = JSON.parse(request.responseText);
+        done(null, data);
+      } else {
+        done('error');
+      }
+    };
+
+    request.send();
+  }
+
+  getJSON('https://api.facebook.com/method/links.getStats?urls=' + PAGE_URL + '&format=json', function(err, data) {
+    if (err) console.log(err);
+    console.log('facebook likes: ' + data[0].total_count);
+  });
+
+  getJSON('https://urls.api.twitter.com/1/urls/count.json?url=' + PAGE_URL, function(err, data) {
+    if (err) console.log(err);
+    console.log('facebook likes: ' + data.count);
+  });
+
+  //https://vk.com/share.php?act=count&url=http://unebaguette.com/web-course/&index=1
+
+
+</script>
 
 <!-- Yandex.Metrika counter -->
 <script>(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter17063677 = new Ya.Metrika({id:17063677, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/17063677" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
