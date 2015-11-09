@@ -94,11 +94,6 @@
     ul { margin-left: 1.6em; padding: 0; }
     ol { margin-left: 2.2em; padding: 0; }
 
-    /*@media (min-width: 769px) {
-      ul { margin-left: 1em; }
-      ol { margin-left: 1.8em; }
-    }*/
-
       @media (min-width: 769px) {
 
         .top-header__group {
@@ -297,11 +292,10 @@
   Приглашаю вас на свой четырехдневный практический курс веб-разработки для начинающих: HTML, CSS и JavaScript.
   </p>
     <ul>
-      <li>Курс пройдет в Москве, в коворкинге <a href="http://coworkstation.ru">Рабочая станция</a> в Парке Горького.</li>
-      <li>4 выходных дня: 31 октября, 1 ноября и 7 ноября, 8 ноября.</li>
+      <li>Курс проходит в Москве, в коворкинге <a href="http://coworkstation.ru">Рабочая станция</a> в Парке Горького.</li>
+      <li>4 выходных дня</li>
       <li>С 15 до 20 часов. С перерывами на чаепития. Всего 20 часов.</li>
       <li>Стоимость: 10 000 рублей.</li>
-      <li>Осталось 4 места из 12.</li>
     </ul>
 
     <a class="signup-btn" href="#register">Записаться на курс</a>
@@ -328,7 +322,7 @@
 
   <h2 id="schedule">Программа курса</h2>
   <ol>
-    <li><strong>День первый</strong>. Введение — как работает интернет, что происходит, когда вы вводите в браузере «yandex.ru». Браузеры и их возможности. Веб-инспектор. Что такое HTML-разметка и семантическая верстка. Как пользоваться редактором кода Atom. Применяем стили к HTML-элементам с помощью CSS. GitHub, Open Source, Stack Overflow — как учиться на реальных задачах.</li>
+    <li><strong>День первый</strong>. Введение — как работает интернет, что происходит, когда вы вводите в браузере «yandex.ru». Браузеры и их возможности. Веб-инспектор. Что такое HTML-разметка и семантическая верстка. Как пользоваться редактором кода Atom. Применяем стили к HTML-элементам с помощью CSS. GitHub, open source, Stack Overflow — как учиться на реальных задачах.</li>
     <li><strong>День второй</strong>. Верстка и сетка: блоки, колонки. Наборы готовых элементов и фреймворки: Bootstrap, Pure. Типографика, использование веб-шрифтов. Адаптивный дизайн: как изменять вид страницы для разных устройств и размеров экрана — смартфон, планшет, десктоп, телевизор. Анимации и эффекты с помощью CSS. Векторная графика, SVG.</li>
     <li><strong>День третий</strong>. Язык программирования JavaScript — переменные, функции и операторы. Оживляем страницы, реакция на действия пользователей. Знакомство с библиотекой jQuery. Создание небольших приложений.</li>
     <li><strong>День четвертый</strong>. Соединяем то, чему научились, вместе: верстаем страницы, делаем приложения. О разработчиках и блогах, на которые стоит подписаться. Конференции и митапы в России и мире. Как выложить готовый сайт или страницу в интернет: домены и хостинги. Дальнейшие шаги: онлайн-курсы и учебники.</li>
@@ -389,34 +383,34 @@
 </article>
 
 <script>
-  var PAGE_URL = 'http://unebaguette.com/web-course/';
+  // var PAGE_URL = 'http://unebaguette.com/web-course/';
+  //
+  // function getJSON(url, done) {
+  //   var request = new XMLHttpRequest();
+  //   request.open('GET', url, true);
+  //
+  //   request.onload = function() {
+  //     if (request.status >= 200 && request.status < 400) {
+  //       // Success!
+  //       var data = JSON.parse(request.responseText);
+  //       done(null, data);
+  //     } else {
+  //       done('error');
+  //     }
+  //   };
+  //
+  //   request.send();
+  // }
 
-  function getJSON(url, done) {
-    var request = new XMLHttpRequest();
-    request.open('GET', url, true);
-
-    request.onload = function() {
-      if (request.status >= 200 && request.status < 400) {
-        // Success!
-        var data = JSON.parse(request.responseText);
-        done(null, data);
-      } else {
-        done('error');
-      }
-    };
-
-    request.send();
-  }
-
-  getJSON('https://api.facebook.com/method/links.getStats?urls=' + PAGE_URL + '&format=json', function(err, data) {
-    if (err) console.log(err);
-    console.log('facebook likes: ' + data[0].total_count);
-  });
-
-  getJSON('https://urls.api.twitter.com/1/urls/count.json?url=' + PAGE_URL, function(err, data) {
-    if (err) console.log(err);
-    console.log('facebook likes: ' + data.count);
-  });
+  // getJSON('https://api.facebook.com/method/links.getStats?urls=' + PAGE_URL + '&format=json', function(err, data) {
+  //   if (err) console.log(err);
+  //   console.log('facebook likes: ' + data[0].total_count);
+  // });
+  //
+  // getJSON('https://urls.api.twitter.com/1/urls/count.json?url=' + PAGE_URL, function(err, data) {
+  //   if (err) console.log(err);
+  //   console.log('facebook likes: ' + data.count);
+  // });
 
   //https://vk.com/share.php?act=count&url=http://unebaguette.com/web-course/&index=1
 
