@@ -52,7 +52,6 @@ html{-webkit-box-sizing:border-box;box-sizing:border-box;}
   --color-secondary-text: #999;
   --color-border: rgba(153, 153, 153, 0.2);
   --color-background: #fff;
-  --color-fieldset-border: #c0c0c0;
 }
 
 /* reset */
@@ -86,7 +85,7 @@ body {
   color: var(--color-text);
   background-color: var(--color-background);
   -webkit-text-size-adjust: 100%;
-  text-rendering: optimizeLegibility
+  text-rendering: optimizeLegibility;
 }
 
 a {
@@ -94,10 +93,10 @@ a {
   text-decoration: none
 }
 
-.page {
-  max-width: 800px;
+main {
+  max-width: 850px;
   margin: auto;
-  padding: 0 15px
+  padding: 0 15px;
 }
 
 @media only screen and (min-width: 769px) {
@@ -180,8 +179,8 @@ a {
 @media only screen and (min-width: 769px) {
   .sectionAbout {
     font-size: 19px;
-    line-height: 1.6;
-    margin-bottom: 50px
+    line-height: 1.7;
+    margin-bottom: 50px;
   }
 }
 
@@ -248,7 +247,7 @@ a {
 
 @media only screen and (min-width: 769px) {
   .projectItem-desc {
-    font-size: 17px;
-    line-height: 1.6
+    font-size: 18px;
+    line-height: 1.7;
   }
 }
