@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Artur Paykin CV</title>
+  <style>
+    :root {
+      --accent-color: #2a5c54;  /* Retro green - main accent */
+      --accent-light: #f0f7f5;  /* Light accent background */
+      --accent-dark: #1d403a;   /* Darker accent for borders */
+      --text-color: #333;       /* Main text color */
+      --secondary-text: #555;   /* Secondary text */
+      --border-color: #ddd;     /* Default borders */
+      --bg-color: #f5f5f5;      /* Page background */
+      --container-bg: #fff;    /* Content background */
+
+      --accent-color: #C66800;
+      --accent-light: #fff4e6;
+      --accent-dark: #8a5700;
+
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+    
+    body {
+      font-family: 'Space Mono', monospace;
+      line-height: 1.55;
+      color: var(--text-color);
+      /* max-width: 800px; */
+      margin: 0 auto;
+      padding: 15px;
+      background-color: var(--bg-color);
+    }
+    
+    .retro-container {
+      border: 3px double var(--accent-dark);
+      padding: 30px;
+      background-color: var(--container-bg);
+      box-shadow: 5px 5px 0px rgba(0,0,0,0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .retro-container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 12px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cpath d='M0 0 L10 0 L20 12 L10 12 Z' fill='%23C66800'/%3E%3C/svg%3E");
+      background-repeat: repeat-x;
+      background-size: 20px 12px;
+    }
+
+    .title-image {
+      width: 60px;
+      height: 60px;
+      border: 2px solid var(--accent-color);
+      border-radius: 4px;
+      object-fit: cover;
+      /* Retro filter */
+      filter: sepia(30%) contrast(110%) brightness(90%);
+    }
+    
+    h1, h2, h3 {
+      font-family: 'Share Tech Mono', monospace;
+      color: var(--accent-color);
+    }
+    
+    h1 {
+      border-bottom: 3px double var(--border-color);
+      padding-bottom: 10px;
+      text-align: center;
+      margin-top: 10px;
+    }
+    
+    h2 {
+      border-bottom: 1px dashed var(--accent-color);
+      margin-top: 30px;
+      padding-bottom: 5px;
+    }
+    
+    h3 {
+      margin-bottom: 5px;
+    }
+    
+    blockquote {
+      border-left: 3px solid var(--accent-color);
+      padding-left: 15px;
+      color: var(--secondary-text);
+      font-style: italic;
+      background-color: #f9f9f9;
+      margin: 20px 0;
+      padding: 15px;
+    }
+    
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+      border-bottom: 1px dotted;
+    }
+    
+    a:hover {
+      background-color: var(--accent-light);
+    }
+    
+    .modem {
+      font-family: 'Share Tech Mono', monospace;
+      /* font-size: 13px; */
+      color: var(--accent-color);
+      margin: 20px 0;
+      padding: 10px;
+      background-color: var(--accent-light);
+      border-left: 3px solid var(--accent-color);
+    }
+    
+    .contact-info {
+      text-align: center;
+      margin: 20px 0;
+    }
+    
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    
+    li {
+      margin: 0;
+      margin-bottom: 8px;
+      position: relative;
+      list-style: none;
+      padding-left: 5px;
+    }
+    
+    li:before {
+      content: ">";
+      position: absolute;
+      left: -15px;
+      color: var(--accent-color);
+      font-family: 'Share Tech Mono', monospace;
+    }
+    
+    .job-title {
+      font-weight: bold;
+      color: var(--accent-color);
+          }
+    
+    .job-date {
+      float: right;
+      color: #777;
+    }
+    
+    .skills-columns {
+      column-count: 2;
+      column-gap: 50px;
+    }
+
+    .public-speaking-columns {
+      display: flex;
+      gap: 50px;
+    }
+
+    .public-speaking-columns > div {
+      flex: 1;
+    }
+    
+    .talk-title {
+      font-weight: bold;
+    }
+    
+    .talk-event {
+      font-style: italic;
+      color: var(--secondary-text);
+    }
+    
+    mark {
+      background-color: var(--accent-light);
+      color: var(--accent-dark);
+      padding: 0px 2px;
+      font-style: normal;
+      border-radius: 2px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="retro-container">
+    <h1>Artur Paykin</h1>
+    <p style="text-align: center;"><em>Senior Frontend Engineer and Project Lead</em></p>
+    <p style="text-align: center;">UK Permanent Resident (<abbr title="Indefinite Leave to Remain">ILR</abbr>, Global Talent)</p>
+    <div class="contact-info">
+      <a href="https://github.com/arturi">github.com/arturi</a> | 
+      <a href="https://www.linkedin.com/in/artur-paykin-847a0b60/">linkedin.com/in/artur-paykin-847a0b60</a><br>
+      <a href="https://arturpaikin.com">arturpaikin.com</a> | 
+      <a href="mailto:artur@arturpaikin.com">artur@arturpaikin.com</a>
+    </div>
+    
+    <div class="modem">
+      login: guest<br>
+      [access granted]<br>
+      $ cat ~/artur_paykin_cv.md
+    </div>
+
+    <h2>About</h2>
+    
+    <blockquote>
+      Artur is a versatile engineer and project leader with over 10 years of experience building sleek, performant websites, applications, and open-source libraries, public speaking, hosting podcasts and product management. When offline, he can be found playing analog RPGs, brewing drip coffee, and steering canal boats.
+    </blockquote>
+    
+    <h2>Experience</h2>
+    
+    <h3>Transloadit (2016–2024) <span class="job-title">— Project Lead and Senior Developer</span></h3>
+    <p><a href="https://uppy.io">uppy.io</a> | <a href="https://github.com/transloadit/uppy">github.com/transloadit/uppy</a> | <a href="https://transloadit.com">transloadit.com</a></p>
+    <p>Led Uppy.io from zero to <mark>30K GitHub stars</mark> and <mark>1M monthly npm downloads</mark>, making it one of the top open-source file uploaders, used by <mark>Coursera, Photobox, Issuu</mark>, and others.</p>
+    <ul>
+      <li>Designed the UI and <mark>modular plugin architecture</mark> with accessibility and DX in mind. Selected only lightweight packages appropriate for a UI widget, focusing on keeping it modular and embeddable.</li>
+      <li>Developer relations: represented Uppy and Transloadit at <mark>various conferences and meetups</mark>, such as Brooklyn.js and Manhattan.js in New York, Nation JS in Washington DC, and Node PDX in Portland, OR.</li>
+      <li>Helped recruit and <mark>lead a highly skilled team</mark> of developers and designers.</li>
+      <li>Managed community engagement: resolved GitHub issues, triaged bugs and feature requests, wrote engaging release blog posts (<mark>featured on HN/Product Hunt</mark>), and scaled user support. Set realistic project goals and release schedules.</li>
+      <li>Conducted regular <mark>accessibility audits</mark> to ensure features were accessible via keyboard and screen readers.</li>
+      <li>Co-designed and built the new Transloadit.com homepage. Worked on improving the admin interface React app and PHP backend, optimized JS bundle size.</li>
+      <li>Organized team-building <mark>Worms Armageddon</mark> tournaments 🐑 and various company offline events in Europe.</li>
+    </ul>
+    <em>See my contributions here: <a href="https://github.com/transloadit/uppy/commits?author=arturi">github.com/transloadit/uppy/commits?author=arturi</a></em>
+    
+    <h3>Baguette Studio (2012–present) <span class="job-title">— Full Stack Engineer and Project Lead</span></h3>
+    <p><a href="https://unebaguette.com">unebaguette.com</a></p>
+    <p>Bootstrapped a studio delivering <mark>lightweight, performant and accessible</mark> websites, apps, and online stores.         Collaborated with top designers and developers.</p> 
+    <ul>
+      <li>Led the development of websites and applications for cultural institutions, museums, fashion brands, and small businesses: Polytechnic Museum, Nycomed, Kidzania, Let’s Bike It! (an urban cycling development project), Arsenicum fashion brand, Brownfox typeface design studio, Serebro Nabora type conference, Local Food Market, and various others.</li>
+      <li>Managed <mark>client relationships and project timelines</mark> across multiple simultaneous projects.</li>
+    </ul>
+    
+    <h3>Immigrantcast (2018–2022) <span class="job-title">— Podcast Host and Producer</span></h3>
+    <p><a href="https://immigrantcast.unebaguette.com">immigrantcast.unebaguette.com</a></p>
+    <ul>
+      <li>Co-hosted a popular podcast (<mark>5K listens per episode</mark>) discussing life in different countries, retro-tech, DOS games, mechanical keyboards, boats, and film photography.</li>
+      <li>Built a static website with dark mode, timecode support in the audio player, and a <mark>99 Lighthouse score</mark>. The website updates automatically when a new episode is released via RSS.</li>
+    </ul>
+    
+    <h3>LiveJournal.com (2008–2012) <span class="job-title">— Technical Support</span></h3>
+    <p>Handled support at LiveJournal — the most popular blogging platform and social media website among Russian-speakers at the time. Triaged user-reported bugs, collaborated with iOS engineers on WebView components for the LiveJournal mobile app, and improved platform stability.</p>
+    
+    <h3>Art Lebedev Studio (2007–2008) <span class="job-title">— Manager</span></h3>
+    <p>Helped open the first offline store and cafe for the leading web design studio in Russia.</p>
+    
+    <h2>Skills</h2>
+    <div class="skills-columns">
+      <ul>
+        <li><strong>Frontend:</strong> HTML/CSS, JavaScript/TypeScript, React, Preact, Svelte</li>
+        <li><strong>Backend/DevOps:</strong> Node, Deno, PHP, Docker, <nobr>CI/CD</nobr></li>
+        <li><strong>Soft Skills:</strong> Public speaking, project, team and community management, DevRel</li>
+        <li><strong>Hardware:</strong> Arudino, <nobr>ESP-8266/32</nobr>, DIY home automation, intermediate soldering skills</li>
+        <li><strong>Languages:</strong> English (fluent), Finnish (intermediate), <nobr>Russian (native)</nobr></li>
+      </ul>
+    </div>
+    
+    <h2>Public Speaking</h2>
+
+    <div class="public-speaking-columns">
+      <div>
+        <h3>Conferences & Talks</h3>
+        <ul>
+          <li><a href="https://youtu.be/HTx8JH7j1G4">Uppy: Building a File Uploader That Won't Bark at the Mailman</a><br>
+            <span class="talk-event">Manhattan.js (New York, USA, 2018)</span></li>
+          <li><a href="https://youtu.be/CvorlYi4L_c">Building a Robot That Talks To You</a><br>
+            <span class="talk-event">Brooklyn.js (New York, USA, 2016)</span></li>
+          <li><a href="https://youtu.be/Z-NpPj6aKJE">Divide & Conquer Your House</a><br>
+            <span class="talk-event">Queens.js (New York, USA, 2016)</span></li>
+          <li>The House Is Not On Fire<br>
+            <span class="talk-event">NodePDX (Portland, USA, 2016)</span></li>
+          <li><a href="https://indieweb.org/2018/Baltimore/Demos#Artur_Paikin">Tent, Lettuja & Uppy.io</a><br>
+            <span class="talk-event">IndieWebCamp Baltimore (Baltimore, USA, 2018)</span></li>
+          <li>The House Is Not On Fire<br>
+            <span class="talk-event">NationJS (Washington DC, USA, 2016)</span></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h3>Workshops & Events</h3>
+        <ul>
+          <li>Mentor at Global Diversity Day<br>
+            <span class="talk-event">New York City, USA (2018)</span></li>
+          <li>Web Development for Beginners Crash Course<br>
+            <span class="talk-event">Moscow, Russia (2015)</span></li>
+          <li>Apple WWDC Live Commentary<br>
+            <span class="talk-event">Strelka Institute for Media, Architecture and Design (Moscow, Russia, 2012)</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
