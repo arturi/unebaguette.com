@@ -81,7 +81,7 @@ ul {
 /* main styles */
 
 body {
-  font-family: 'Merriweather', serif;
+  font-family: Merriweather, serif;
   color: var(--color-text);
   background-color: var(--color-background);
   -webkit-text-size-adjust: 100%;
@@ -90,7 +90,7 @@ body {
 
 a {
   color: var(--color-text);
-  text-decoration: none
+  text-decoration: none;
 }
 
 main {
@@ -101,14 +101,13 @@ main {
 
 @media only screen and (min-width: 769px) {
   .page {
-    padding: 0
+    padding: 0;
   }
 }
 
 .mainHeader {
   margin-top: 50px;
   margin-bottom: 35px;
-  font-family: serif
 }
 
 @media only screen and (min-width: 769px) {
@@ -119,53 +118,34 @@ main {
 }
 
 .mainHeader-title {
-  font-family: serif;
+  font-family: Merriweather, serif;
   font-size: 55px;
   line-height: 1.2;
   font-weight: 700;
   color: var(--color-primary);
   position: relative;
   margin-bottom: 15px;
-  letter-spacing: 0
+  letter-spacing: 0;
+}
+
+.mainHeader-title a {
+  color: var(--color-primary);
+}
+
+.mainHeader-title:before {
+  content: '';
+  width: 100px;
+  height: 6px;
+  background-color: var(--color-primary);
+  position: absolute;
+  top: -20px;
+  left: 0;
 }
 
 @media only screen and (min-width: 769px) {
   .mainHeader-title {
-    font-family: Merriweather, serif;
     font-size: 80px;
     margin-bottom: 20px;
-    letter-spacing: 0
-  }
-
-  .mainHeader-title a {
-    color: var(--color-primary);
-    text-decoration: none
-  }
-
-  .mainHeader-title:before {
-    content: '';
-    width: 100px;
-    height: 6px;
-    background-color: var(--color-primary);
-    position: absolute;
-    top: -20px;
-    left: 0
-  }
-
-  .mainHeader-subtitle {
-    font-family: serif;
-    font-size: 19px;
-    line-height: 1.2;
-    font-weight: 400;
-    letter-spacing: 0
-  }
-
-  @media only screen and (min-width: 769px) {
-    .mainHeader-subtitle {
-      font-family: Merriweather, serif;
-      font-size: 22px;
-      letter-spacing: 0
-    }
   }
 }
 
