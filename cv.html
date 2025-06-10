@@ -187,8 +187,8 @@
 <body>
   <div class="retro-container">
     <h1>Artur Paykin</h1>
-    <p style="text-align: center;"><em>Senior Frontend Engineer and Project Lead</em></p>
-    <p style="text-align: center;">UK Permanent Resident (<abbr title="Indefinite Leave to Remain">ILR</abbr>, Global Talent)</p>
+    <p style="text-align: center;"><em>Senior Frontend Engineer and Product Lead</em></p>
+    <p style="text-align: center;">UK Permanent Resident (<abbr title="Indefinite Leave to Remain">ILR</abbr>, Global Talent, no visa required)</p>
     <div class="contact-info">
       <a href="https://github.com/arturi">github.com/arturi</a> | 
       <a href="https://www.linkedin.com/in/artur-paykin-847a0b60/">linkedin.com/in/artur-paykin-847a0b60</a><br>
@@ -196,65 +196,70 @@
       <a href="mailto:artur@arturpaikin.com">artur@arturpaikin.com</a>
     </div>
     
-    <div class="modem">
+    <!-- <div class="modem">
       login: guest<br>
       [access granted]<br>
       $ cat ~/artur_paykin_cv.md
-    </div>
+    </div> -->
 
     <h2>About</h2>
     
     <blockquote>
-      Artur is a versatile engineer and project leader with over 10 years of experience building sleek, performant websites, applications, and open-source libraries, public speaking, hosting podcasts and product management. When offline, he can be found playing analog RPGs, brewing drip coffee, and steering canal boats.
+      <img src="assets/images/berlin_art.jpg" alt="Artur Paykin" style="width: 100px; height: 100px; border-radius: 50%; float: right; margin-left: 20px; margin-bottom: 10px; object-fit: cover; border: 2px solid var(--accent-color);">
+      Artur is a versatile engineer, product designer and lead with over 10 years of experience building sleek, performant websites, applications, and open-source libraries, public speaking, and project management. When offline, he can be found playing analog RPGs, brewing drip coffee, recording podcasts and steering canal boats.
     </blockquote>
+
+    <h2>Skills</h2>
+  
+    <div class="skills-columns">
+      <ul>
+        <li><strong>Frontend:</strong> HTML, CSS, JavaScript/TypeScript, React, Preact, Svelte</li>
+        <li><strong>Backend:</strong> Node JS, Express, Deno, PHP, Docker, <nobr>CI/CD</nobr>, Nginx, Caddy</li>
+        <li><strong>Technical Leadership:</strong> Team and project lead (3 developers, 1 designer)</li>
+        <li><strong>Developer Relations:</strong> Conference & meetup speaking, mentoring, community management, writing documentation</li>
+        <li><strong>Hardware:</strong> Arduino, <nobr>ESP-8266/32</nobr>, intermediate soldering skills</li>
+      </ul>
+    </div>
     
     <h2>Experience</h2>
     
     <h3>Transloadit (2016–2024) <span class="job-title">— Project Lead and Senior Developer</span></h3>
     <p><a href="https://uppy.io">uppy.io</a> | <a href="https://github.com/transloadit/uppy">github.com/transloadit/uppy</a> | <a href="https://transloadit.com">transloadit.com</a></p>
-    <p>Led Uppy.io from zero to <mark>30K GitHub stars</mark> and <mark>1M monthly npm downloads</mark>, making it one of the top open-source file uploaders, used by <mark>Coursera, Photobox, Issuu</mark>, and others.</p>
+    <p>Led Uppy.io from an idea to <mark>30K GitHub stars</mark> and <mark>1M monthly npm downloads</mark>, making it one of the top open-source file uploaders, used by <mark>Coursera, Photobox, Issuu</mark>, and others.</p>
     <ul>
-      <li>Designed the UI and <mark>modular plugin architecture</mark> with accessibility and DX in mind. Selected only lightweight packages appropriate for a UI widget, focusing on keeping it modular and embeddable.</li>
+      <li>Designed the UI and <mark>modular plugin architecture</mark> with accessibility and DX in mind. Conducted regular <mark>accessibility audits</mark> to ensure features were accessible via keyboard and screen readers.</li>
+      <li>Developed various plugins that extended uploader/picker functionality, such as: Webcam support, voice notes, Instagram, Import from URL, File Compressor and others.</li>
+      <li>Utilized IndexedDB and Service Worker to retain selected files and metadata in case users close the tab / navigate away / browser is closed.</li>
       <li>Developer relations: represented Uppy and Transloadit at <mark>various conferences and meetups</mark>, such as Brooklyn.js and Manhattan.js in New York, Nation JS in Washington DC, and Node PDX in Portland, OR.</li>
-      <li>Helped recruit and <mark>lead a highly skilled team</mark> of developers and designers.</li>
+      <li>Handled commercial support (B2B): provided support via Slack and Zoom, worked on priority features for business customers.</li>
+      <li>Helped recruit and <mark>lead a highly skilled team</mark> of developers and designers. Organized team-building <mark>Worms Armageddon</mark> tournaments 🐑 and various company offline events in Europe.</li>
       <li>Managed community engagement: resolved GitHub issues, triaged bugs and feature requests, wrote engaging release blog posts (<mark>featured on HN/Product Hunt</mark>), and scaled user support. Set realistic project goals and release schedules.</li>
-      <li>Conducted regular <mark>accessibility audits</mark> to ensure features were accessible via keyboard and screen readers.</li>
       <li>Co-designed and built the new Transloadit.com homepage. Worked on improving the admin interface React app and PHP backend, optimized JS bundle size.</li>
-      <li>Organized team-building <mark>Worms Armageddon</mark> tournaments 🐑 and various company offline events in Europe.</li>
     </ul>
     <em>See my contributions here: <a href="https://github.com/transloadit/uppy/commits?author=arturi">github.com/transloadit/uppy/commits?author=arturi</a></em>
     
-    <h3>Baguette Studio (2012–present) <span class="job-title">— Full Stack Engineer and Project Lead</span></h3>
+    <h3>Baguette Studio (2012–2017) <span class="job-title">— Full Stack Engineer and Project Lead</span></h3>
     <p><a href="https://unebaguette.com">unebaguette.com</a></p>
-    <p>Bootstrapped a studio delivering <mark>lightweight, performant and accessible</mark> websites, apps, and online stores.         Collaborated with top designers and developers.</p> 
+    <p>Bootstrapped a studio delivering <mark>lightweight, performant and accessible</mark> websites, apps, and online stores. Collaborated with top designers and developers.</p> 
     <ul>
       <li>Led the development of websites and applications for cultural institutions, museums, fashion brands, and small businesses: Polytechnic Museum, Nycomed, Kidzania, Let’s Bike It! (an urban cycling development project), Arsenicum fashion brand, Brownfox typeface design studio, Serebro Nabora type conference, Local Food Market, and various others.</li>
       <li>Managed <mark>client relationships and project timelines</mark> across multiple simultaneous projects.</li>
     </ul>
+
+    <h3>Polytechnic Museum (2012–2013) <span class="job-title">— Frontend Developer</span></h3>
+    <p>Working closely with a designer and backend developer, I was responsible for rebuilding the frontend from the ground up.</p>
     
-    <h3>Immigrantcast (2018–2022) <span class="job-title">— Podcast Host and Producer</span></h3>
-    <p><a href="https://immigrantcast.unebaguette.com">immigrantcast.unebaguette.com</a></p>
-    <ul>
-      <li>Co-hosted a popular podcast (<mark>5K listens per episode</mark>) discussing life in different countries, retro-tech, DOS games, mechanical keyboards, boats, and film photography.</li>
-      <li>Built a static website with dark mode, timecode support in the audio player, and a <mark>99 Lighthouse score</mark>. The website updates automatically when a new episode is released via RSS.</li>
-    </ul>
-    
-    <h3>LiveJournal.com (2008–2012) <span class="job-title">— Technical Support</span></h3>
+    <h3>LiveJournal.com (2008–2012) <span class="job-title">— Senior Technical Support</span></h3>
     <p>Handled support at LiveJournal — the most popular blogging platform and social media website among Russian-speakers at the time. Triaged user-reported bugs, collaborated with iOS engineers on WebView components for the LiveJournal mobile app, and improved platform stability.</p>
     
-    <h3>Art Lebedev Studio (2007–2008) <span class="job-title">— Manager</span></h3>
-    <p>Helped open the first offline store and cafe for the leading web design studio in Russia.</p>
-    
-    <h2>Skills</h2>
-    <div class="skills-columns">
-      <ul>
-        <li><strong>Frontend:</strong> HTML/CSS, JavaScript/TypeScript, React, Preact, Svelte</li>
-        <li><strong>Backend/DevOps:</strong> Node, Deno, PHP, Docker, <nobr>CI/CD</nobr></li>
-        <li><strong>Soft Skills:</strong> Public speaking, project, team and community management, DevRel</li>
-        <li><strong>Hardware:</strong> Arudino, <nobr>ESP-8266/32</nobr>, DIY home automation, intermediate soldering skills</li>
-        <li><strong>Languages:</strong> English (fluent), Finnish (intermediate), <nobr>Russian (native)</nobr></li>
-      </ul>
-    </div>
+    <!-- <h3>Art Lebedev Studio (2007–2008) <span class="job-title">— Project Manager</span></h3>
+    <p>Helped open the first offline store and cafe for the leading web design studio in Russia.</p> -->
+
+    <h3>Neonika (2006–2007) <span class="job-title">— Web Designer</span></h3>
+    <p>Designed and coded interfaces for LiveAlbums social network.</p>
+
+    <!-- <h3>Freelance IT support (2006–2008)</h3>
+    <p>Supported IT infrastructure for a network of Windows computers at Gymnasium 5 and multiple private clients and small businesses in Belgorod and Moscow cities.</p> -->
     
     <h2>Public Speaking</h2>
 
@@ -275,6 +280,12 @@
           <li>The House Is Not On Fire<br>
             <span class="talk-event">NationJS (Washington DC, USA, 2016)</span></li>
         </ul>
+        
+        <h3>Podcasts</h3>
+        <ul>
+          <li>I co-hosted and produced <strong><a href="https://immigrantcast.unebaguette.com">Immigrantcast</a></strong>, a popular podcast (<mark>5K listens per episode</mark>) discussing life in different countries, retro-tech, DOS games, mechanical keyboards, boats, and film photography. I built a static website with dark mode, timecode support in the audio player, and a <mark>99 Lighthouse score</mark>.</li>
+        </ul>
+
       </div>
       
       <div>
